@@ -15,7 +15,7 @@ public class FactorySquares implements Factory {
     public Figure create(String color) {
         Figure figure = figures.get(color);
         if (figure != null) {
-            return figures.get(color);
+            return figure;
         }
         figure = new Square(color);
         figures.put(color, figure);
